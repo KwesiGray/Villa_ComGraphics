@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script/aframe.min.js"></script>
+    <title>Document</title>
+    
+</head>
+<body>
+
+    <a-scene>
+
+        <a-asets>
+            <img src="texture/2k_stars_milky_way.jpg" id="Csky">
+            <img src="texture/pexels-markus-winkler-5881676.jpg" id="ground">
+            <a-asets-items id="house" src="3D Models/Two/scene.gltf"></a-asets-items>
+            <a-asets-items id="Snooker" src="3D Models/Snooker table/scene.gltf"></a-asets-items>
+            <a-asets-items id="pool" src="3D Models/Pool 2/scene.gltf"></a-asets-items>
+            <a-asets-items id="tree" src="3D Models/Tree/scene.gltf"></a-asets-items>
+            <a-asets-items id="lig" src="3D Models/Room Light 1/scene.gltf"></a-asets-items>
+            <a-asets-items id="ligs" src="3D Models/Room Light 2/scene.gltf"></a-asets-items>
+
+          
+            
+            
+
+           
+        </a-asets>
+
+
+         <a-sky src="#Csky" ></a-sky>
+
+        <a-plane color="" width="20" height="20" position="20 -1 0" rotation="-90 0 0" scale="15 15 15" src="#ground" repeat="16 16"></a-plane>
+        
+
+        <a-entity gltf-model="#house" scale="2.5 2.5 2.5"></a-entity>
+
+        <a-entity gltf-model="#Snooker" scale="3 3 3" position="60 0 -90"></a-entity>
+
+        <a-entity gltf-model="#pool" scale="0.17 0.17 0.17" position="90 -6 -50"></a-entity>
+
+       
+
+        <!-- Lights -->
+         
+        <a-entity light="type: spot; color: #ff8d0a; angle: 80; penumbra: 0.29; intensity: 0.8; groundColor: #ffffff; shadowRadius: 1.01" rotation="-87.616 -174.381 -7.331000000000001" position="73.1316 6.50047 -30.59944"></a-entity>
+        <a-box color="black" height="0.5" width="0.5" depth="4" position="75.60786 6.2 -30.5989"></a-box>
+        
+
+        <a-box color="black" height="0.5" width="0.5" depth="4" position="52.44749 5.9999 -38.54042"></a-box>
+         <a-light type="spot" intensity="1" angle="35" penumbra="0.2" distance="20" position="54.347 6.54973 -38.54" rotation="-90 0 0" light="angle: 80; penumbra: 0.31; distance: 18.87; color: #ff7b00; decay: -11.09; castShadow: true"></a-light>
+        
+
+
+        
+         <a-box color="white" position="60 6 -10.1" width="1" height="1" depth="0.7"></a-box>
+
+         <a-entity position="60 5.9 -10">
+            <a-light type="spot" color="#fff" angle="45" intensity="1" distance="50" penumbra="0.5" rotation="-71.86265849648838 -2.4482486585940073 -70.41422119039765" light="color: #56b8f5; angle: 70; intensity: 1.9; penumbra: 0.51; castShadow: true"></a-light>
+          </a-entity>
+
+          <!--Light two-->
+          <a-box color="white" position="73 6 -10.1" width="1" height="1" depth="0.7"></a-box>
+
+          <a-entity position="73 5.9 -10">
+            <a-light type="spot" color="#fff" angle="45" intensity="1" distance="50" penumbra="0.5" rotation="-71.86265849648838 -2.4482486585940073 -70.41422119039765" light="color: #56b8f5; angle: 70; intensity: 1.9; penumbra: 0.51; castShadow: true"></a-light>
+          </a-entity>
+         
+          
+         
+
+
+          <!--Light 3-->
+          <a-entity position="40 5.9 -10">
+            <a-light type="spot" color="#fff" angle="45" intensity="1" distance="50" penumbra="0.5" rotation="-71.86265849648838 -2.4482486585940073 -70.41422119039765" light="color: #56b8f5; angle: 70; intensity: 1.9; penumbra: 0.51; castShadow: true"></a-light>
+          </a-entity>
+
+          <a-entity position="40 6 -10.1">
+            <a-entity light="type: point; intensity: 12.29; distance: 1.81; angle: 20; color: #0565ff; castShadow: true" position="0 -1.11834 0" angle="10"></a-entity>
+            <a-box color="white" position="0 0.2 0" width="1" height="1" depth="0.7"></a-box>
+          </a-entity>
+          
+
+
+          <a-entity position="30 5.9 -16">
+            <a-light type="spot" color="#fff" angle="45" intensity="1" distance="50" penumbra="0.5" rotation="-71.86265849648838 -2.4482486585940073 -70.41422119039765" light="color: #56b8f5; angle: 70; intensity: 1.9; penumbra: 0.51; castShadow: true"></a-light>
+          </a-entity>
+
+          <a-entity position="30 6 -16.1">
+            <a-entity light="type: point; intensity: 12.29; distance: 1.81; angle: 20; color: #0565ff; castShadow: true" position="0 -1.11834 0" angle="10"></a-entity>
+            <a-box color="white" position="0 0.2 0" width="1" height="1" depth="0.7"></a-box>
+          </a-entity>
+
+
+
+          <!--Left side of the building-->
+          <a-entity position="77.4 5.9 -16">
+            <a-light type="spot" color="#fff" angle="45" intensity="1" distance="50" penumbra="0.5" rotation="-71.86265849648838 -2.4482486585940073 -70.41422119039765" light="color: #56b8f5; angle: 70; intensity: 1.9; penumbra: 0.51; castShadow: true"></a-light>
+          </a-entity>
+
+          <a-entity position="77.4 6 -16.1">
+            <a-entity light="type: point; intensity: 1; distance: 1.81; angle: 20; color: #0565ff; castShadow: true" position="0 -1.11834 0" angle="10"></a-entity> -->
+            <a-box color="white" position="0 0.2 0" width="1" height="1" depth="0.7"></a-box>
+          </a-entity>
+
+
+          <!--Left side of the building-->
+          <a-entity position="77.4 5.9 -35">
+            <a-light type="spot" color="#fff" angle="45" intensity="1" distance="50" penumbra="0.5" rotation="-71.86265849648838 -2.4482486585940073 -70.41422119039765" light="color: #56b8f5; angle: 70; intensity: 1.9; penumbra: 0.51; castShadow: true"></a-light>
+          </a-entity>
+
+          <a-entity position="77.4 6 -35.1">
+            <a-entity light="type: point; intensity: 1; distance: 1.81; angle: 20; color: #0565ff; castShadow: true" position="0 -1.11834 0" angle="10"></a-entity> -->
+            <a-box color="white" position="0 0.2 0" width="1" height="1" depth="0.7"></a-box>
+          </a-entity>
+          
+
+           <!--Left side of the building-->
+           <a-entity position="77.4 5.9 -60">
+            <a-light type="spot" color="#fff" angle="45" intensity="1" distance="50" penumbra="0.5" rotation="-71.86265849648838 -2.4482486585940073 -70.41422119039765" light="color: #56b8f5; angle: 70; intensity: 1.9; penumbra: 0.51; castShadow: true"></a-light>
+          </a-entity>
+
+          <a-entity position="77.4 6 -60.1">
+            <a-entity light="type: point; intensity: 1; distance: 1.81; angle: 20; color: #0565ff; castShadow: true" position="0 -1.11834 0" angle="10"></a-entity> -->
+            <a-box color="white" position="0 0.2 0" width="1" height="1" depth="0.7"></a-box>
+          </a-entity>
+
+
+
+           <!--Left side of the building-->
+           <a-entity position="79 5.9 -75">
+            <a-light type="spot" color="#fff" angle="45" intensity="10" distance="50" penumbra="0.5" rotation="-71.86265849648838 -2.4482486585940073 -70.41422119039765" light="color: #56b8f5; angle: 70; intensity: 1.9; penumbra: 0.51; castShadow: true"></a-light>
+          </a-entity>
+
+          <a-entity position="79 6 -75.1">
+            <a-entity light="type: point; intensity: 5; distance: 1.81; angle: 20; color: #0565ff; castShadow: true" position="0 -1.11834 0" angle="10"></a-entity> -->
+            <a-box color="white" position="0 0.2 0" width="1" height="1" depth="0.7"></a-box>
+          </a-entity>
+
+
+        
+          
+          
+          
+          
+
+          
+
+          
+
+
+
+         
+        
+       
+
+        
+
+ 
+         <a-camera position="50 2 20"></a-camera>
+
+         <a-entity light="type: ambient; color: white; intensity: 0.2;"></a-entity>  
+    </a-scene>
+    
+</body>
+</html>
